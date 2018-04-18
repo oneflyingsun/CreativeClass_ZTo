@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="pfwqwEwtVbL">
+  <start-date>2018-03-30T16:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>资源 1</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t2"/>
+  </task>
+  <task id="t2">
+    <title>课堂助手</title>
+    <type>group</type>
+    <child-task idref="t10"/>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+  </task>
+  <task id="t10">
+    <title>前期准备</title>
+    <type>group</type>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <child-task idref="t17"/>
+  </task>
+  <task id="t11">
+    <title>项目报告</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t12">
+    <title>可行性研究</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-03T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-03T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>需求分析</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-03T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-03T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t14">
+    <title>需求分析文档</title>
+    <type>milestone</type>
+    <start-constraint-date>2018-04-04T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-04T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t15">
+    <title>设计分析</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-05T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-05T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t17">
+    <title>UI设计文档</title>
+    <type>milestone</type>
+    <start-constraint-date>2018-04-10T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-10T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t18">
+    <title>中期开发</title>
+    <type>group</type>
+    <start-constraint-date>2018-04-11T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t20"/>
+    <child-task idref="t21"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <child-task idref="t24"/>
+    <start-no-earlier-than>2018-04-11T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t19">
+    <title>项目结束阶段</title>
+    <type>group</type>
+    <start-constraint-date>2018-04-20T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t39"/>
+    <child-task idref="t40"/>
+    <start-no-earlier-than>2018-04-20T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t20">
+    <title>用户中心</title>
+    <type>group</type>
+    <start-constraint-date>2018-03-30T08:45:00.000Z</start-constraint-date>
+    <child-task idref="t25"/>
+    <child-task idref="t26"/>
+    <child-task idref="t27"/>
+    <start-no-earlier-than>2018-03-30T08:45:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t21">
+    <title>考勤模块</title>
+    <type>group</type>
+    <start-constraint-date>2018-04-17T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t28"/>
+    <child-task idref="t29"/>
+    <child-task idref="t30"/>
+    <start-no-earlier-than>2018-04-17T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t22">
+    <title>在线考试模块</title>
+    <type>group</type>
+    <start-constraint-date>2018-04-11T00:15:00.000Z</start-constraint-date>
+    <child-task idref="t31"/>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+    <start-no-earlier-than>2018-04-11T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t23">
+    <title>文件管理模块</title>
+    <type>group</type>
+    <child-task idref="t34"/>
+    <child-task idref="t35"/>
+  </task>
+  <task id="t24">
+    <title>群组模块</title>
+    <type>group</type>
+    <start-constraint-date>2018-04-16T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t36"/>
+    <child-task idref="t37"/>
+    <child-task idref="t38"/>
+    <start-no-earlier-than>2018-04-16T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t25">
+    <title>登录</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-12T00:30:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-12T00:30:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t26">
+    <title>注册</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-13T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-13T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t27">
+    <title>个人中心</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-16T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-16T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t28">
+    <title>地理位置签到</title>
+    <effort>58500</effort>
+    <start-constraint-date>2018-04-18T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-18T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t29">
+    <title>人脸识别签到</title>
+    <effort>55800</effort>
+    <start-constraint-date>2018-04-18T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-18T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t30">
+    <title>自动签到</title>
+    <effort>56700</effort>
+    <start-constraint-date>2018-04-18T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-18T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t31">
+    <title>问卷调查</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t32">
+    <title>在线考试</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-12T00:15:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-12T00:15:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t33">
+    <title>数据展示</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-04-12T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-12T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t34">
+    <title>文件上传下载</title>
+    <effort>85500</effort>
+  </task>
+  <task id="t35">
+    <title>数据统计</title>
+    <effort>86400</effort>
+  </task>
+  <task id="t36">
+    <title>班级群租</title>
+    <effort>86400</effort>
+  </task>
+  <task id="t37">
+    <title>消息互发</title>
+    <effort>115200</effort>
+  </task>
+  <task id="t38">
+    <title>通知公告</title>
+    <effort>115200</effort>
+  </task>
+  <task id="t39">
+    <title>相关测试</title>
+    <effort>173700</effort>
+    <start-constraint-date>2018-04-20T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-04-20T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t40">
+    <title>项目结题报告</title>
+    <effort>28800</effort>
+    <start-constraint-date>2018-05-03T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2018-05-03T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
